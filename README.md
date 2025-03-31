@@ -5,7 +5,7 @@ npm create vite@latest
 
 npm -i
 
-sudo npm -g install v
+sudo npm -g install vite
 
 sudo npm -g install n
 
