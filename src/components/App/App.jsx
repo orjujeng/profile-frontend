@@ -5,7 +5,6 @@ function App() {
   const routes = useRoutes(route)
   return (
     <Fragment>
-      <h1>App components</h1>
       {routes}
     </Fragment>
   )

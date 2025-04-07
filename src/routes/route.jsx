@@ -1,7 +1,7 @@
-import Main from "../pages/main"
+import Proifle from "../pages/profile"
 export default [
     {
         path:'/',
-        element:<Main/>
+        element:<Proifle/>
     }
 ]
