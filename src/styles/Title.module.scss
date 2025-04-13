@@ -1,0 +1,17 @@
+.titleWarp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 960px;
+}
+
+.routeList{
+    flex: 1;
+}
+.brand{
+    flex:1;
+}
+.authInfo{
+    flex: 1;
+}
