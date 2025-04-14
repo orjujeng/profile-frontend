@@ -8,6 +8,7 @@ export default function capsuleButton(props) {
     <>
       <div className={styles.warp}>
         <div className={styles.imgwarp}>
+          {/* todo get this from props*/ }
             <img src={poc} alt=""/>
         </div>
         <div className={styles.namewarp}>

@@ -7,11 +7,11 @@
 .endwith{
     color: #d5e3f5;
     font-size: 12px;
-    
 }
 
 .warp{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-self: center;
+    align-items: flex-end;
 }

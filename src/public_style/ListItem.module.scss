@@ -1,10 +1,10 @@
-
-
 .item {
     color: #d1c5c7;
     font-size: 14px;
-    // flex: 1;
     text-align: center;
     padding-right: 15px;
+    &:hover{
+       cursor: pointer; 
+    }
 }
 
