@@ -1,0 +1,55 @@
+.title {
+    font-size: 96px;
+    color: #fff;
+    font-weight: bold;
+}
+.titleApp{
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.titleMicro{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.carouselList{
+    font-size: 96px;
+    color: #1A220C;
+    background-color: #ea516a;
+    border-radius: 15px;
+    padding: .1em;
+    animation: slide-in 1.2s ease-out 0.3s both;
+}
+.carouselListApp{
+    font-size: 72px;
+    color: #1A220C;
+    background-color: #ea516a;
+    border-radius: 15px;
+    padding: .1em;
+    animation: slide-in 1.2s ease-out 0.3s both;
+}
+
+.carouselListMicro{
+    font-size: 40px;
+    color: #1A220C;
+    background-color: #ea516a;
+    border-radius: 15px;
+    padding: .1em;
+    animation: slide-in 1.2s ease-out 0.3s both;
+}
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    80% {
+      transform: translateX(5%);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
