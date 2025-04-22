@@ -1,17 +1,20 @@
 import React from 'react'
 import styles from '../../public_style/CapsuleButton.module.scss'
-import poc from '../../assets/png/wallhaven-vq76dp_3840x1600.png'
-export default function capsuleButton(props) {
+import { colors } from '@mui/material';
+
+export default function CapsuleButton(props) {
   const {data} = props;
   const name = data.name
+  const image = data.image
+  const style = data.style
   return (
     <>
-      <div className={styles.warp}>
+      <div className={style=='light'?styles.warpLight:styles.warp} >
         <div className={styles.imgwarp}>
           {/* todo get this from props*/ }
-            <img src={poc} alt=""/>
+            <img src={image} alt=""/>
         </div>
-        <div className={styles.namewarp}>
+        <div className={style=='light'?styles.namewarpLight:styles.namewarp}>
             {name}
         </div>
       </div>

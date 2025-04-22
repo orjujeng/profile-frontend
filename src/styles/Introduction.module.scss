@@ -12,3 +12,11 @@
     align-items: flex-start;
     width: 100%; 
 }
+.buttonsWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    & > :first-child {
+        margin-right: 1em;
+      }
+}

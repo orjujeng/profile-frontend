@@ -1,7 +1,7 @@
 import React from 'react'
 import List from '../../public_components/List/List'
 import Brand from '../../public_components/Brand/Brand'
-import CapsuleButton from '../../public_components/capsuleButton/capsuleButton'
+import CapsuleButton from '../../public_components/CapsuleButton/CapsuleButton'
 import styles from '../../styles/Title.module.scss'
 import checkWindowSize from '../../utils/checkWindowsSize'
 import ListApp from '../../public_components/List/ListApp'
@@ -11,7 +11,7 @@ export default function Title() {
   const isMobile = width <= 1024;
   const authInfo = {
     name : 'Login',
-    image : ''
+    image : 'https://avatars.githubusercontent.com/u/61106078?v=4&size=64'
   }
   return (
     <>
