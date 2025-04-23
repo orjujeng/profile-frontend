@@ -5,6 +5,7 @@ import checkWindowSize from '../../utils/checkWindowsSize'
 import Carousel from '../../public_components/Carousel/Carousel'
 import Description from '../../public_components/Description/Description'
 import CapsuleButton from '../../public_components/CapsuleButton/CapsuleButton'
+import DownArrow from '../../public_components/DownArrow/DownArrow'
 export default function Introduction() {
   const { width } = checkWindowSize();
   const isMobile = width <= 1024;
@@ -33,6 +34,8 @@ export default function Introduction() {
       {/* email button */}
       <CapsuleButton data = {emailInfo}/>
       </div>
+      {/* down arrow */}
+      <DownArrow disapperHight={300} />
     </div>
     </>
   )
