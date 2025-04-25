@@ -1,0 +1,14 @@
+.warp{
+    color: #d1c7c5;
+    opacity: .64;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+   
+    &> :first-child {
+        margin-right:.75em;
+    }
+    margin-right:.75em;
+}

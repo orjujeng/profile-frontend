@@ -1,0 +1,49 @@
+.frontendWarp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+}
+.frontendWarpMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; 
+}
+.mainWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mainWarpApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.infoPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tagWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15em;
+    height: 4em;
+}
+.buttonsWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    & > :first-child {
+        margin-right: 1em;
+      }
+}

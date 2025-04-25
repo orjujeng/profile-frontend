@@ -4,7 +4,7 @@ import styles from '../../styles/Introduction.module.scss'
 import checkWindowSize from '../../utils/checkWindowsSize'
 import Carousel from '../../public_components/Carousel/Carousel'
 import Description from '../../public_components/Description/Description'
-import CapsuleButton from '../../public_components/CapsuleButton/CapsuleButton'
+import CapsuleButton from '../../public_components/capsuleButton/capsuleButton'
 import DownArrow from '../../public_components/DownArrow/DownArrow'
 export default function Introduction() {
   const { width } = checkWindowSize();
