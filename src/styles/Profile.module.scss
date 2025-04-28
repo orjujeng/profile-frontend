@@ -15,12 +15,19 @@
 }
 
 *{
-    background-color:#1a202c;
+    background-color:#1a202c;   
 }
+
 .frontendWarp{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 12em;
+    
+    background-image: url('../assets/png/background-MuHVchmm.webp');
+}
+
+.frontendWarp  *{
+    background-color: transparent;
 }

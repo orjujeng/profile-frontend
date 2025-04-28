@@ -15,7 +15,7 @@
 .mainWarp{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .mainWarpApp{
@@ -46,4 +46,10 @@
     & > :first-child {
         margin-right: 1em;
       }
+}
+.thumbnailWarp{
+    border: .5rem solid rgba(255, 255, 255, .25);
+    border-radius: 1rem;
+    // width: 100%;
+    height: auto;
 }
