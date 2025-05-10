@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef,useState} from 'react'
 import styles from '../../styles/Frontend.module.scss'
 import Header from '../../public_components/Header/Header';
 import checkWindowSize from '../../utils/checkWindowsSize'
@@ -7,6 +7,7 @@ import Description from '../../public_components/Description/Description';
 import Tag from '../../public_components/Tag/Tag';
 import CapsuleButton from '../../public_components/capsuleButton/capsuleButton';
 import img from '../../assets/png/mainpage-1-desktop-C6lInk3R.webp'
+import checkLeftBounding from '../../utils/checkLeftBounding'
 export default function Frontend() {
   const { width } = checkWindowSize();
   const isMobile = width <= 1024;
@@ -21,6 +22,8 @@ export default function Frontend() {
     name: 'View Online',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE84H4meueuyC578lSCHyl8LwonoKP5xylTg&s',
   }
+  const thumbnailRef = useRef(null);
+  const leftBouding  = (-(checkLeftBounding(thumbnailRef) - width)) + 'px';
   return (
     <>
       <div className={isMicro ? styles.frontendWarpMicro : styles.frontendWarp}>
@@ -52,9 +55,9 @@ export default function Frontend() {
     }
     {/* right pic pc and mobile only*/}
     {isMicro ? 11111111111 : 
-     <div className={styles.thumbnailWarp}>
+     <div className={styles.thumbnailWarp} ref={thumbnailRef}>
       {/* right pic */}
-      <img src={img} alt="" />
+      <img src={img} width={leftBouding}/>
     </div> 
     }
         </div>
