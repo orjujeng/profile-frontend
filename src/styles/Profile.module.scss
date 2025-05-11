@@ -24,10 +24,22 @@
     align-items: center;
     justify-content: center;
     margin-top: 12em;
-    
     background-image: url('../assets/png/background-MuHVchmm.webp');
 }
 
 .frontendWarp  *{
+    background-color: transparent;
+}
+
+.frontendWarpApp{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 12em;
+    background-image: url('../assets/png/background-MuHVchmm.webp');
+}
+
+.frontendWarpApp  *{
     background-color: transparent;
 }

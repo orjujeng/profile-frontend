@@ -20,6 +20,13 @@
 }
 .mainWarpApp{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainWarpMicro{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -43,6 +50,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    margin-top: 12em;
     & > :first-child {
         margin-right: 1em;
       }
