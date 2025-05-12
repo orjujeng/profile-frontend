@@ -16,7 +16,7 @@ export default function checkLeftBounding (elementRef) {
         window.removeEventListener('scroll', updatePosition);
         window.removeEventListener('resize', updatePosition);
       };
-    }, [elementRef]);
+    }, []);
   
     return position;
   };

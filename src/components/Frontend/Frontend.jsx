@@ -8,6 +8,7 @@ import Tag from '../../public_components/Tag/Tag';
 import CapsuleButton from '../../public_components/capsuleButton/capsuleButton';
 import img from '../../assets/png/mainpage-1-desktop-C6lInk3R.webp'
 import checkLeftBounding from '../../utils/checkLeftBounding'
+import microImg from '../../assets/png/image.png'
 export default function Frontend() {
   const { width } = checkWindowSize();
   const isMobile = width <= 1024;
@@ -26,16 +27,26 @@ export default function Frontend() {
   const leftBouding = (width - checkLeftBounding(thumbnailRef))-15 + 'px';
   return (
     <>
-      <div className={isMicro ? styles.frontendWarpMicro : styles.frontendWarp}>
+      <div className={isMobile ? isMicro ? styles.frontendWarpMicro: styles.frontendWarpApp : styles.frontendWarp}>
         {/*  header */}
         <Header title='WORK' />
         {/* web port */}
         <div className={isMobile ? isMicro ? styles.mainWarpMicro : styles.mainWarpApp : styles.mainWarp}>
-          {isMobile ? 1111111111 :
+          {isMicro ? <div className={styles.infoPartMicro}> 
+          <SubTitle title='Orjujeng.com' isMobile={isMobile}/>
+          <Description info='As you can see! This is my first FE project with Responsive Web Design' isMicro={isMicro} />
+            {/* tag */}
+            <div className={styles.tagMicroWarp}>
+                <Tag type='FE' name='React 19' />
+                <Tag type='FE' name='SCSS' />
+                <Tag type='DEVOPS' name='S3/Nginx' />
+              </div>
+            </div>
+            :
             <div className={styles.infoPart}>
               {/* left desc */}
               {/* subh1 */}
-              <SubTitle title='Orjujeng.com' />
+              <SubTitle title='Orjujeng.com' isMobile={isMobile}/>
               {/* desc */}
               <Description info='As you can see! This is my first FE project with Responsive Web Design' isMicro={isMicro} />
               {/* tag */}
@@ -54,12 +65,22 @@ export default function Frontend() {
             </div>
           }
           {/* right pic pc and mobile only*/}
-          {isMicro ? 11111 :
+          {isMicro ? <div className={styles.thumbnailMicroWarp} >
+              {/* right pic */}
+              <img src={microImg} width='100%' />
+            </div>
+             :
             <div className={styles.thumbnailWarp} ref={thumbnailRef}>
               {/* right pic */}
               <img src={img} width={leftBouding} />
             </div>
           }
+          {isMicro ?<div className={styles.buttonsMicroWarp}>
+                {/* github button */}
+                <CapsuleButton data={repoInfo} />
+                {/* email button */}
+                <CapsuleButton data={siteInfo} />
+              </div>:null}
         </div>
       </div>
     </>

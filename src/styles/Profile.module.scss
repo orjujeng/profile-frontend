@@ -24,7 +24,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 12em;
-    background-image: url('../assets/png/background-MuHVchmm.webp');
+    background: url('../assets/png/background-MuHVchmm.webp') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .frontendWarp  *{
@@ -37,7 +38,8 @@
     align-items: start;
     justify-content: center;
     margin-top: 12em;
-    background-image: url('../assets/png/background-MuHVchmm.webp');
+    background: url('../assets/png/background-MuHVchmm.webp') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .frontendWarpApp  *{
