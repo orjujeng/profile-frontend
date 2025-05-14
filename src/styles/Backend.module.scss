@@ -1,0 +1,107 @@
+.backendWarp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 960px;
+}
+.backendWarpApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100%; 
+}
+.backendWarpMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; 
+}
+.mainWarp{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.mainWarpApp{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainWarpMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.infoPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.infoPartMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tagWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15em;
+    height: 4em;
+}
+.tagMicroWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4em;
+}
+.buttonsWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 12em;
+    & > :first-child {
+        margin-right: 1em;
+      }
+}
+.buttonsMicroWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    & > :first-child {
+        margin-right: 1em;
+      }
+}
+.thumbnailWarp{
+    border: .5rem solid rgba(255, 255, 255, .25);
+    border-radius: 1rem;
+    // width: 100%;
+    height: auto;
+    margin-right: 1em;
+}
+
+.thumbnailMicroWarp{
+    border: .5rem solid rgba(255, 255, 255, .25);
+    border-radius: 1rem;
+    // width: 100%;
+    height: auto;
+    
+}
+.titleWarp{
+    align-self: flex-start;
+}

@@ -7,7 +7,9 @@ export default function checkLeftBounding (elementRef) {
         if (elementRef.current) {
           const rect = elementRef.current.getBoundingClientRect();
           setPosition(rect.left + window.scrollX);
+          // console.log(rect.left + window.scrollX)
         }
+        
       };
       updatePosition();
       window.addEventListener('scroll', updatePosition);

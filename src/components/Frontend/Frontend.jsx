@@ -24,7 +24,7 @@ export default function Frontend() {
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE84H4meueuyC578lSCHyl8LwonoKP5xylTg&s',
   }
   const thumbnailRef = useRef(null);
-  const leftBouding = (width - checkLeftBounding(thumbnailRef))-15 + 'px';
+  const leftBouding = (width - checkLeftBounding(thumbnailRef)) + 'px';
   return (
     <>
       <div className={isMobile ? isMicro ? styles.frontendWarpMicro: styles.frontendWarpApp : styles.frontendWarp}>
