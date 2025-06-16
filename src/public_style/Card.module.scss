@@ -1,0 +1,97 @@
+.cardWarpWithShadow{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1em;
+    box-shadow: 0 1.5em 3em #0000003d;
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
+    transition-delay: 0.45s;
+}
+
+.cardWarpNoShadow{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1em;
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
+    transition-delay: 0.45s;
+}
+.dateWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: .75em;
+    color : #d1c7c5;
+}
+.dateContext{
+    margin-left: 0.75em;
+}
+
+.headerWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: .33em;
+    margin-bottom: .33em;
+    color: #f7efec;
+}
+.descWarp{
+    color: #d1c7c5;
+    font-size: .875em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+.labelWarp{
+    color: #d1c7c5;
+    font-size: .75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.sublabelWarp{
+    margin-right: 1em;
+    &:after{
+        content: '·';
+        margin-left: .65em;
+    }
+}
+
+.buttonWarp{
+    margin-top: 1em;
+    // margin-bottom: 1em;
+    opacity: 1;
+
+    transition: 
+        opacity 2s ease-in-out,
+        transform 2s ease;
+    & > *{
+        margin-top: 1em;
+    }
+    
+}
+
+.buttonWarpHidden{
+   margin-top: 1em;
+//  margin-bottom: 1em;
+    opacity: 0;
+    transition: 
+        opacity 2s ease-in-out,
+        transform 2s ease;
+    transform:  translateY(20%);
+    
+    & > *{
+        margin-top: 1em;
+    } 
+}
+

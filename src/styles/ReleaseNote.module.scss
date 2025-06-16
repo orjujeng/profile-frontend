@@ -19,3 +19,11 @@
     align-items: flex-start;
     width: 100%; 
 }
+.cardListWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}

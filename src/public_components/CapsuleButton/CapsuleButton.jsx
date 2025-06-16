@@ -9,9 +9,10 @@ export default function CapsuleButton(props) {
   return (
     <>
       <div className={style=='light'?styles.warpLight:styles.warp} >
+        {image == '' ? null: 
         <div className={styles.imgwarp}>
-        <img src={image} alt=""/>
-        </div>
+          <img src={image} alt=""/>
+        </div>}
         <div className={style=='light'?styles.namewarpLight:styles.namewarp}>
             {name}
         </div>

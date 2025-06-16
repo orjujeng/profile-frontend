@@ -10,9 +10,9 @@ export default function ReleaseNote() {
   const cardInfo = {
 
      date: '2025/05/01',
-     header: '',
-     desc:'', 
-     label :[]
+     header: 'React Router 7 has Server Components?',
+     desc:'If you’ve been following the React world for a year or so, you might’ve heard about server components concept', 
+     label :['react','react-router','remix']
   }
   return (
     <>
@@ -20,7 +20,15 @@ export default function ReleaseNote() {
               {/*  header */}
               <Header title='RELEASE NOTE' />
               {/* card list */}
+      <div className={styles.cardListWarp}>
+              {/* card */}
               <Card data = {cardInfo}/>
+              <Card data = {cardInfo}/>
+              <Card data = {cardInfo}/>
+              <Card data = {cardInfo}/>
+              <Card data = {cardInfo}/>
+              <Card data = {cardInfo}/>
+      </div>
               {/* pPagination */}
       </div>
     </>
