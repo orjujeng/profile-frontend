@@ -10,6 +10,29 @@
     transition-delay: 0.45s;
 }
 
+.cardWarpNoShadowMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1em;
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
+    transition-delay: 0.45s;
+    width: 100%;
+}
+
+.cardWarpWithShadowMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1em;
+    box-shadow: 0 1.5em 3em #0000003d;
+    transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
+    transition-delay: 0.45s;
+    width: 100%;
+}
+
 .cardWarpNoShadow{
     flex: 1;
     display: flex;
@@ -32,6 +55,28 @@
 }
 
 .headerWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: .33em;
+    margin-bottom: .33em;
+    color: #f7efec;
+}
+
+.headerWarpApp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: .33em;
+    margin-bottom: .33em;
+    color: #f7efec;
+}
+
+.headerWarpMicro{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -68,30 +113,52 @@
 }
 
 .buttonWarp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
     margin-top: 1em;
-    // margin-bottom: 1em;
     opacity: 1;
-
     transition: 
-        opacity 2s ease-in-out,
-        transform 2s ease;
+        opacity 2s ease-in-out;
+    & > *{
+         margin-right: 1em;
+    }
+    
+}
+
+.buttonWarpHidden{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 1em;
+    opacity: 0;
+    transition: 
+        opacity 2s ease-in-out;
+    & > *{
+        margin-right: 1em;
+    } 
+}
+
+
+.buttonWarpMicro{
+    margin-top: 1em;
+    opacity: 1;
+    transition: 
+        opacity 2s ease-in-out;
     & > *{
         margin-top: 1em;
     }
     
 }
 
-.buttonWarpHidden{
+.buttonWarpHiddenMicro{
    margin-top: 1em;
-//  margin-bottom: 1em;
     opacity: 0;
     transition: 
-        opacity 2s ease-in-out,
-        transform 2s ease;
-    transform:  translateY(20%);
-    
+        opacity 2s ease-in-out;
     & > *{
         margin-top: 1em;
     } 
 }
-
