@@ -49,7 +49,7 @@ export default function Card(props) {
       ))}
       </div>
       {/* button */}
-      <div className={showButton?styles.buttonWarp: styles.buttonWarpHidden}>
+      <div className={showButton?styles.buttonWarpMicro: styles.buttonWarpHiddenMicro}>
         <CapsuleButton data = {detailInfo}/>
         <CapsuleButton data = {specificCommit}/>
       </div>
