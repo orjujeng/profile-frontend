@@ -6,6 +6,7 @@ import Frontend from '../../components/Frontend/Frontend'
 import checkWindowSize from '../../utils/checkWindowsSize'
 import Backend from '../../components/Backend/Backend' 
 import ReleaseNote from '../../components/ReleaseNote/ReleaseNote'
+import Progress from '../../components/Progress/Progress'
 export default function profile() {
   const { width } = checkWindowSize();
   const isMobile = width <= 1024;
@@ -24,8 +25,11 @@ export default function profile() {
     <div className={isMobile ? styles.backendWarpApp: styles.backendWarp}> 
       <Backend/>
     </div>
-    <div className={isMobile ? styles.releaseNoteWarpApp: styles.releaseNoteWarp}> 
+    <div className={styles.releaseNoteWarp}> 
       <ReleaseNote/>
+    </div>
+    <div className={styles.progressWarp}> 
+      <Progress/>
     </div>
     </>
   )

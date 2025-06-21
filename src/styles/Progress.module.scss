@@ -1,0 +1,35 @@
+.progressWarp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+}
+.progressWarpApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%; 
+}
+
+.progressWarpMicro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; 
+}
+.barWarp{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+.barWarpMicro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
