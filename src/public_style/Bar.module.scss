@@ -1,0 +1,66 @@
+.barTitleWarp {
+    color: #fffffa;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+.barTitleWarpMicro {
+    color: #fffffa;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+.barTitleWarpApp {
+    color: #fffffa;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+.barMainWarp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fffffa;
+}
+.barDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.barDescPercent{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.barDescPercent::after{
+    content: "%";
+    color: #f4F8FF7D;
+}
+.barDescStatus{
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: #f4F8FF7D;
+}
+.barDescStartDate{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: #f4F8FF7D;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.barChart{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+}
