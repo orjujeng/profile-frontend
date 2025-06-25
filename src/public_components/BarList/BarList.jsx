@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from '../../public_style/BarList.module.scss'
 export default function BarList(props) {
-  const { chartInfo } = props;
+  const { chartInfo,maxHeight } = props;
+  const height = (chartInfo[1] / 100) * maxHeight; 
   return (
     <>
-      <div className="topPercent">{chartInfo[1]}</div>
-      <div className="percentCol">{chartInfo[1]}</div>
-      <div className="desc">{chartInfo[0]}</div>
-      <div className="date">{chartInfo[2]}</div>
+    <div className={styles.barListWarp}>
+      <div className={styles.topPercent}>{chartInfo[1]}%</div>
+      <div className={styles.percentCol} style={{ height: height,backgroundColor:chartInfo[3]}}></div>
+      <div className={styles.desc}>{chartInfo[0]}</div>
+      <div className={styles.status}>{chartInfo[2]}</div>
+    </div>
     </>
   )
 }

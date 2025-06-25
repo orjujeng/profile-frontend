@@ -9,11 +9,11 @@ export default function Progress() {
     const isMobile = width <= 1024;
     const isMicro = width <= 766;
     const chartInfo = [
-       ['Profile',80,'undergoing'],
-       ['Login',80,'undergoing'],
-       ['Request',80,'undergoing'],
-       ['Main',80,'undergoing'],
-       ['TBD',80,'undergoing']
+       ['Profile',90,'Process','#f35a5f'],
+       ['Login',0,'Process','#f55d14'],
+       ['Request',10,'Process','#e4a50d'],
+       ['Main',20,'Process','#26bb28'],
+       ['TBD',100,'Process','#34ca87']
     ]
   return (
     <>
@@ -21,7 +21,8 @@ export default function Progress() {
       <Header title='PROGRESS' />
       <div className={isMicro ? styles.barWarpMicro : styles.barWarp}>
         <SemiCBar title ='All Project Progress' percent = {20} desc= {'Since 2025 Mar'} dataTime = {'June 2025'}/>
-        <Bar title ='Front Project Progress' descPercent = '74' descStatus ='Undergoing' descDate = {'Since 2025 Mar'} chartInfo ={chartInfo}/>
+        <div className={styles._}></div>
+        <Bar title ='Front Project Progress' descPercent = '74' descStatus ='Undergoing' descDate = {'Since 2025 Mar'} chartInfo ={chartInfo} maxHeight={160}/>
       </div>
     </div>
     </>

@@ -23,8 +23,9 @@
 .barWarp{
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: start;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
 }
 .barWarpMicro{
     display: flex;
@@ -32,4 +33,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+
+}
+._{
+    width: 1rem;
+    height: 1rem;
 }

@@ -7,7 +7,7 @@ import { green } from '@mui/material/colors';
 import BarList from '../BarList/BarList';
 export default function Bar(props) {
     const { title } = props;
-    const { descPercent, descStatus, descDate,chartInfo} = props
+    const { descPercent, descStatus, descDate,chartInfo,maxHeight} = props
     const { width } = checkWindowSize();
     const isMobile = width <= 1024;
     const isMicro = width <= 766;
@@ -25,14 +25,18 @@ export default function Bar(props) {
                         <div className={styles.barDescStatus}>
                             {descStatus}
                         </div>
-                        <div className={styles.barDescStartDate}>
+                        <div className={isMobile ? styles.barDescStartDateApp : styles.barDescStartDate}>
+                            
                             <MovingIcon sx={{ color: green[500] }} />
-                            &nbsp; {descDate}
+                            
+                            
+                                {descDate}
+                        
                         </div>
                     </div>
                     <div className={styles.barChart}>
                         {chartInfo.map((info)=>{
-                                return <BarList chartInfo={info}/>
+                                return <BarList chartInfo={info} maxHeight={maxHeight}/>
                               })}
                     </div>
                 </div>

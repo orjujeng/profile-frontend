@@ -28,6 +28,8 @@
     justify-content: space-between;
     align-items: flex-end;
     color: #fffffa;
+    margin-top: 1rem;
+    width: 100%;
 }
 .barDesc{
     display: flex;
@@ -57,10 +59,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
+}
+.barDescStartDateApp{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: .6rem;
+    color: #f4F8FF7D;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .barChart{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: end;
 }
