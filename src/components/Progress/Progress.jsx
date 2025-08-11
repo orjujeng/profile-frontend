@@ -4,6 +4,7 @@ import checkWindowSize from '../../utils/checkWindowsSize'
 import Header from '../../public_components/Header/Header';
 import SemiCBar from '../../public_components/SemiCBar/SemiCBar';
 import Bar from '../../public_components/Bar/Bar';
+import ProgressRow from '../../public_components/Progress/Progress';
 export default function Progress() {
     const { width } = checkWindowSize();
     const isMobile = width <= 1024;
@@ -23,6 +24,9 @@ export default function Progress() {
         <SemiCBar title ='All Project Progress' percent = {20} desc= {'Since 2025 Mar'} dataTime = {'June 2025'}/>
         <div className={styles._}></div>
         <Bar title ='Front Project Progress' descPercent = '74' descStatus ='Undergoing' descDate = {'Since 2025 Mar'} chartInfo ={chartInfo} maxHeight={160}/>
+      </div>
+      <div className={styles.backendProgressWarp}>
+        <ProgressRow/>
       </div>
     </div>
     </>
