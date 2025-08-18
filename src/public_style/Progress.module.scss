@@ -1,0 +1,42 @@
+.imgWarp{
+  
+}
+.progressWarp{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+}
+.textWarp{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.title{
+    font-size: 1.1rem;
+    color: #fffffffa;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.projectProcess > span{
+    color:#f4f8ff7d;
+    font-size:1.5rem;
+}
+
+.projectProcess {
+    color: #fffffffa;
+    font-size:1.5rem;
+    margin-top: .5rem;
+}
+.progressWarp {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.progress{
+    width: 100%;
+    height: .3rem;
+    background-color: #fffffffa;
+    border-radius: .3rem;
+    margin-top: .5rem;
+}
