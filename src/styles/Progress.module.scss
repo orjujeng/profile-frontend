@@ -40,10 +40,12 @@
     height: 1rem;
 }
 .backendProgressWarp{
-    margin-top: 3rem;
+    margin-top: .5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
+}
+.backendProgressWarp >:nth-child(n){
+    margin-top: 1rem;
 }

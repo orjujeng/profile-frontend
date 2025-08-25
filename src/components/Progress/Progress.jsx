@@ -16,6 +16,13 @@ export default function Progress() {
        ['Main',20,'Process','#26bb28'],
        ['TBD',100,'Process','#34ca87']
     ]
+    const processInfo = {
+      imgPath :'https://ts1.tc.mm.bing.net/th/id/OIP-C.XC5FEd38gvc6KZf1WYmvRwHaHa?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3',
+      title : 'Auth Api',
+      projectPercent : 70,
+      apiInfo:'Swagger / Postman',
+      link:['https://swagger.io/tools/swagger-ui/','https://www.postman.com/']
+    }
   return (
     <>
     <div className={isMobile ? isMicro ? styles.progressWarpMicro : styles.progressWarpApp : styles.progressWarp}>
@@ -26,7 +33,10 @@ export default function Progress() {
         <Bar title ='Front Project Progress' descPercent = '74' descStatus ='Undergoing' descDate = {'Since 2025 Mar'} chartInfo ={chartInfo} maxHeight={160}/>
       </div>
       <div className={styles.backendProgressWarp}>
-        <ProgressRow/>
+        <ProgressRow processInfo={processInfo}/>
+        <ProgressRow processInfo={processInfo}/>
+        <ProgressRow processInfo={processInfo}/>
+        <ProgressRow processInfo={processInfo}/>
       </div>
     </div>
     </>

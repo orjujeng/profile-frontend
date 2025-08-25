@@ -1,16 +1,19 @@
-.imgWarp{
-  
-}
+
 .progressWarp{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     flex-direction: row;
+    // width: 100%;
+    flex-wrap: wrap;
 }
 .textWarp{
     display: flex;
     justify-content: start;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 .title{
     font-size: 1.1rem;
@@ -29,14 +32,30 @@
     font-size:1.5rem;
     margin-top: .5rem;
 }
-.progressWarp {
-    width: 100%;
-    margin-bottom: .5rem;
-}
+
 .progress{
     width: 100%;
     height: .3rem;
     background-color: #fffffffa;
     border-radius: .3rem;
     margin-top: .5rem;
+}
+.imgWarp img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 1rem;
+        margin-top: 1rem;
+}
+.link{
+    color:#f4f8ff7d;
+    font-size:1rem;
+    margin-bottom: 1rem;
+}
+
+.link:hover{
+   color:#fffffffa;
+   font-size:1rem; 
+   cursor: pointer;
 }

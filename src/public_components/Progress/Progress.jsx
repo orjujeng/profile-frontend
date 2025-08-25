@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../public_style/Progress.module.scss'
 import Printbox from '../Printbox/Printbox'
 export default function Progress(props) {
-  const { imgPath,title,projectPercent} = props;
+  const { imgPath,title,projectPercent,apiInfo,link} = props.processInfo;
   return (
     <>
       <Printbox>
@@ -10,21 +10,31 @@ export default function Progress(props) {
           {/* img */}
           <div className={styles.imgWarp}>
             <img src={imgPath} />
-            11111
           </div>
           <div className={styles.textWarp}>
             {/* title */}
             <div className={styles.title}>
-              {title} Water retention
+              {title}
             </div>
             <div className={styles.projectProcess}>
-              {projectPercent} 11<span>/100% Project Process</span>
+              {projectPercent}<span>/100% Project Process</span>
             </div>
             {/* progress */}
-            <div className={styles.progressWarp}>
+            <div className={styles.progressLineWarp}>
               <div className={styles.progress}></div>
             </div>
             {/*percent */}
+          </div>
+          <div className={styles.textWarp}>
+            {/* title */}
+            <div className={styles.title}>
+              {apiInfo}
+            </div>
+            {link.map((item) => (
+            <div className={styles.link}>
+              {item}
+            </div>
+            ))}
           </div>
         </div>
       </Printbox>
